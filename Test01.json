@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "3a79ed44-5779-46fb-b2b9-dfd0a463da24",
+		"name": "Test01",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "百度",
+			"item": [
+				{
+					"name": "接口测试",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.baidu.com/s?wd=接口测试",
+							"protocol": "http",
+							"host": [
+								"www",
+								"baidu",
+								"com"
+							],
+							"path": [
+								"s"
+							],
+							"query": [
+								{
+									"key": "wd",
+									"value": "接口测试"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://www.baidu.com",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://www.baidu.com",
+							"protocol": "http",
+							"host": [
+								"www",
+								"baidu",
+								"com"
+							]
+						},
+						"description": "百度"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "获取‘北京’数据",
+			"item": [
+				{
+					"name": "获取‘北京’数据",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "百度",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.baidu.com/s?wd={{city}}",
+							"protocol": "http",
+							"host": [
+								"www",
+								"baidu",
+								"com"
+							],
+							"path": [
+								"s"
+							],
+							"query": [
+								{
+									"key": "wd",
+									"value": "{{city}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	]
+}
